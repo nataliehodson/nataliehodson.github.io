@@ -13,7 +13,14 @@
             <h1>Cooked by Natalie</h1>
             <h4>By Natalie Hodson</h4>
         </header>
-
+        
+        <script>
+            fetch('item-names/item-1-name.txt')
+                .then(response => response.text())
+                .then(text => document.getElementById("item-1-name").innerHTML = text)
+        </script>
+        <p id="item-1-name" class="item-name">name</p>
+        
         <main>
             <div class'entry'>
                 <h5 class = 'articleTitle'>Wrapless Lentil Wrap with Lime Joghurt Sauce</h5>
